@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+  <head>
+    <link href="bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style3.css" rel="stylesheet">
+    <link href="Font-Awesome-3.2.1/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="resource/jquery-3.2.1.min.js"></script>
+    
+    <script type="text/javascript" >
+        
+     
+        
+      var main = function(){
+          
+          
+          var countCircle=0;
+          $(".arrow-next").click(function(){
+              
+              
+              var currentSlides = $('.active-slides');
+              var nextSlides = currentSlides.next();
+              
+              
+              
+              
+             
+              
+              
+              if(nextSlides.length===0)
+                  {
+                      nextSlides = $('.slides').first();
+                     
+                  }
+              
+              currentSlides.fadeOut(600).removeClass('active-slides');
+              nextSlides.fadeIn(600).addClass('active-slides');
+              
+
+              
+          });
+          
+          
+          $('.arrow-prev').click(function(){
+              
+              var currentSlides = $('.active-slides');
+              var prevSlides = currentSlides.prev();
+              
+              
+              
+              
+              var currentDot = $('.active-dot');
+              
+              
+              if(prevSlides.length===0)
+                  {
+                      prevSlides = $('.slides').last();
+                      
+                  }
+              
+              currentSlides.fadeOut(600).removeClass('active-slides');
+              prevSlides.fadeIn(600).addClass('active-slides');
+              
+             
+              
+          });
+          
+          
+          $('.dropDown').click(function(){
+              
+               $('.lateral-menu').fadeToggle(300);
+               var currentIcon = $(".icon-plus");
+               
+               currentIcon.toggleClass("icon-spin");
+               
+               
+               
+          });
+          
+            
+          $( "#draggable" ).draggable();
+          
+          $("#droppable").droppable({
+              
+              
+              
+              drop:function(event,ui){
+                  
+                  $(".emblem").html("<a href='http：//www.baidu.com'>点我查看福利</a>")
+              }
+              
+          });
+            
+        
+         
+          
+          
+          
+          
+         
+          
+      } 
+      
+      $(document).ready(function(){
+             
+             setTimeout(function(){
+                $('#wrapper').addClass('loaded');
+                 
+             },2000); 
+              
+          });
+      
+      $(document).ready(main);
+      </script>
+      
+      
+    <meta charset="UTF-8">  
+    <title> CUCS</title>
+      
+      
+   
+  </head>
+  <body>
+      
+      <!--Logo，顶部菜单-->
+     <header >
+      <div class="row">
+        <div class="col-xs-4">   
+        <img id="logo" src="img/logo.png" height="50%" width="70%">
+        </div>
+        <nav class="col-xs-8">
+           <div class="menu">
+               <a href = "index.html"> 关于我们</a>
+               <a >  成员</a>
+               <a > 动态</a>
+               <a> 资料库  </a>
+               <a> 联系方式  </a>
+           </div>       
+        </nav>
+      </div>
+      </header>
+      
+    <!--主要区域-->
+      <section class="jumbotron">
+        <div class="slides active-slides">
+          <div class=container>
+            
+            <div class="row">
+                
+                <div class="col-sm-12">
+                    <img src="img/whiteBoardPainting.png" height="100%" width="100%" />
+                    
+                    
+                </div>    
+                  
+                
+            </div>    
+          </div>      
+        </div>
+          
+        <div class="slides">
+         
+                  <div class="col-sm-12">
+                    <img src="img/whiteBoardPainting.png" height="100%" width="100%" />
+                    
+                    
+                </div>    
+            
+        </div>    
+        
+          
+        <div class="slides">
+          <div class="row">
+              
+                   
+                <div class="col-sm-12">
+                    <img src="img/whiteBoardPainting.png" height="100%" width="100%" />
+                    
+                    
+                </div>    
+                    
+                    
+                    
+                  
+          </div>
+        </div>  
+      
+        <div class="slides">
+          <div class="row">
+             <div class="col-sm-12">
+                    <img src="img/whiteBoardPainting.png" height="100%" width="100%" />
+                    
+                    
+                </div>    
+          </div>
+        </div>  
+          
+        
+          
+           
+         
+        
+      </section>
+      <section class="container arrowContainer">
+      
+         <a href="#" class="arrow-prev" ><img src="img/left_arrow.png" height="30%" width="30%"></a>
+            
+        <a href="#" class="arrow-next"><img src="img/right_arrow.png" height="30%" width="30%"></a>    
+          
+      </section>      
+      <section class="container seperatorContainer"> 
+        
+        <img src="img/seperator2.png" width="100%">
+       
+       
+      </section>      
+      
+      
+      
+    <!--底部区域 -->    
+      <section class="container bottomSection ">
+          
+          
+             
+          
+                
+          
+          
+              <ul class = "Department">
+                  <li ><a>宣传部 | Dept of publicity<br><img src="img/Lecture_Hall.png" height="75%" width="75%"></a></li>
+                  <li><a href="dOfAcademy.html">学术部 | Dept of Academy<br><img src="img/Lecture_Hall2.png" height="75%" width="75%"></a></li>
+                  <li><a >活动 | Dept of Outreaching<br><img src="img/ICS_Hall.png" height="75%" width="75%"></a></li>
+                  <li><a >外联部 | Dept of Outreaching<br><img src="img/BS_Hall.png" height="75%" width="75%"></a></li>
+              </ul>      
+               
+      </section>          
+     
+      
+    
+      
+  </body>
+    <!--页脚-->
+    
+  <footer class="container">
+          
+          
+          <p>Copyright2017 © Chinese Union of Computer Science at UC Irvine. All rights reserved</p>
+  </footer>
+    
+</html>
