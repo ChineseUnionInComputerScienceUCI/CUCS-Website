@@ -2,6 +2,7 @@
 
 .container {
  
+    min-width: 1200px;
     width:100%;;
     height: inherit;
     margin: 0;
@@ -14,6 +15,7 @@ body{
     background: #ffffff;
     margin: 0;
     padding: 0;
+    height: 100%;
     
     
 }
@@ -23,7 +25,7 @@ body{
 
 header{
     
-    
+    min-width: 1200px;
     width: 100%;
     height: 134px;
     padding: 0;
@@ -50,11 +52,12 @@ header{
 
 .col-xs-8{
     height: inherit;
+    
 }
 
 #logo{
     
-    margin: 4% 10%;
+    margin: 32px 10%;
     
 
 }
@@ -77,10 +80,10 @@ header{
 .menu a{
     
     font-family: "Microsoft YaHei","黑体","宋体",sans-serif;
-    font-size: 2.2rem;
+    font-size: 1.7em;
     font-weight: lighter;
     display: inline-block;
-    height:100%;
+    height:134px;
     vertical-align: top;
     padding-top: 5.5%;
     padding-left: 2%;
@@ -100,74 +103,26 @@ header{
 /* Body slides area*/
 .jumbotron{
     display: relative;
+    min-width: 1200px;
     width: 100%;
-    height:100%;
+    height:500px;
     margin: 0;
     padding: 0;
     
 }
 
-.slides{
-    
-    z-index: 4;
-    width: inherit;
-    height: inherit;
-    display: none;
-    margin: 0;
-    padding: 0;
-   
-    
-}
-
-
-
-.col-xs-5{
-    
-    display: block;
-    margin: 0;
-    padding: 0;
-    height: inherit;
-}
-
-.col-xs-7{
-    
-    display: block;
-    margin: 0;
-    padding: 0;
-    height: inherit;
-    
-}
-
-
-.col-sm-12{
-    width: 100%;
-    display: block;
-    margin: 0;
-    padding: 0;
-}
 
 
 
 
-.active-slides{
-    
-   
-    display: block;
-}
 
 
 
-.arrowContainer{
-    
-    background: transparent;
-    position: absolute;
-    bottom: 20%;
-    z-index: 5;
-    padding-left: 1%;
-    
-    width: 100%;
-    
-}
+
+
+
+
+
 
 
 .seperatorContainer{
@@ -185,33 +140,6 @@ header{
 
 
 
-.arrow-prev{
-   
-   padding: 0;
-  
-   width: 55px;
-   
-      
-   float:left;
-   display: block;
-   
-}
-
-.arrow-next{
-    
-    padding: 0;
-    width: 55px;
-    z-index:5;
-    float: right;
-    display: block;
-    
-    
-    
-}
-
-.arrow-next img{
-    float: right;
-}
 
 
 /*Department*/
