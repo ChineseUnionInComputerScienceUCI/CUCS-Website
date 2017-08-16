@@ -1,7 +1,9 @@
+<<<<<<< HEAD
 /* General */
 
 .container {
  
+    min-width: 1200px;
     width:100%;;
     height: inherit;
     margin: 0;
@@ -14,6 +16,7 @@ body{
     background: #ffffff;
     margin: 0;
     padding: 0;
+    height: 100%;
     
     
 }
@@ -23,7 +26,7 @@ body{
 
 header{
     
-    
+    min-width: 1200px;
     width: 100%;
     height: 134px;
     padding: 0;
@@ -50,11 +53,12 @@ header{
 
 .col-xs-8{
     height: inherit;
+    
 }
 
 #logo{
     
-    margin: 4% 10%;
+    margin: 32px 10%;
     
 
 }
@@ -77,10 +81,10 @@ header{
 .menu a{
     
     font-family: "Microsoft YaHei","黑体","宋体",sans-serif;
-    font-size: 2.2rem;
+    font-size: 1.7em;
     font-weight: lighter;
     display: inline-block;
-    height:100%;
+    height:134px;
     vertical-align: top;
     padding-top: 5.5%;
     padding-left: 2%;
@@ -100,74 +104,26 @@ header{
 /* Body slides area*/
 .jumbotron{
     display: relative;
+    min-width: 1200px;
     width: 100%;
-    height:100%;
+    height:500px;
     margin: 0;
     padding: 0;
     
 }
 
-.slides{
-    
-    z-index: 4;
-    width: inherit;
-    height: inherit;
-    display: none;
-    margin: 0;
-    padding: 0;
-   
-    
-}
-
-
-
-.col-xs-5{
-    
-    display: block;
-    margin: 0;
-    padding: 0;
-    height: inherit;
-}
-
-.col-xs-7{
-    
-    display: block;
-    margin: 0;
-    padding: 0;
-    height: inherit;
-    
-}
-
-
-.col-sm-12{
-    width: 100%;
-    display: block;
-    margin: 0;
-    padding: 0;
-}
 
 
 
 
-.active-slides{
-    
-   
-    display: block;
-}
 
 
 
-.arrowContainer{
-    
-    background: transparent;
-    position: absolute;
-    bottom: 20%;
-    z-index: 5;
-    padding-left: 1%;
-    
-    width: 100%;
-    
-}
+
+
+
+
+
 
 
 .seperatorContainer{
@@ -185,33 +141,6 @@ header{
 
 
 
-.arrow-prev{
-   
-   padding: 0;
-  
-   width: 55px;
-   
-      
-   float:left;
-   display: block;
-   
-}
-
-.arrow-next{
-    
-    padding: 0;
-    width: 55px;
-    z-index:5;
-    float: right;
-    display: block;
-    
-    
-    
-}
-
-.arrow-next img{
-    float: right;
-}
 
 
 /*Department*/
@@ -329,3 +258,264 @@ footer p{
 
 
 
+=======
+/* General */
+
+.container {
+ 
+    min-width: 1200px;
+    width:100%;;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    
+    background: #ffffff;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    
+    
+}
+
+/* Header */
+
+
+header{
+    
+    min-width: 1200px;
+    width: 100%;
+    height: 134px;
+    padding: 0;
+    margin: 0;
+    background: #303030;
+}
+
+.row{
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    height: 100%;
+   
+}
+
+
+
+.col-xs-4{
+    
+    
+    height: inherit;
+    padding: 0;
+}
+
+.col-xs-8{
+    height: inherit;
+    
+}
+
+#logo{
+    
+    margin: 32px 10%;
+    
+
+}
+
+
+
+.menu{
+   
+    width:80%;
+    height: 100%;
+    
+    
+    
+    margin-left: 18%;
+    
+}
+
+
+
+.menu a{
+    
+    font-family: "Microsoft YaHei","黑体","宋体",sans-serif;
+    font-size: 1.7em;
+    font-weight: lighter;
+    display: inline-block;
+    height:134px;
+    vertical-align: top;
+    padding-top: 5.5%;
+    padding-left: 2%;
+    width: 19%;
+    color: white;
+    text-decoration: none;
+    
+}
+
+.menu a:hover{
+    
+    background: #0C6988;
+}
+
+
+
+/* Body slides area*/
+.jumbotron{
+    display: relative;
+    min-width: 1200px;
+    width: 100%;
+    height:500px;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.seperatorContainer{
+    
+    background: #9EA5AB;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    
+    
+}
+
+
+
+
+
+
+
+
+/*Department*/
+.bottomSection{
+    background-color: #505050;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+
+.Department{
+   
+   
+    padding: 0;
+    margin: 5% 12%;
+    height:68%;
+    width: 80%;
+    
+}
+
+.Department li{
+    
+    
+    
+    display: inline-block;
+    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+    font-weight: 100;
+    width:22.5%;
+    height: 100%;
+    margin-left: 1%;
+    
+}
+
+.Department a{
+    
+    padding: 5px 3px 12px 3px;
+    text-align: center;
+    background: #606060;
+    width: 100%;
+    height: 85%;
+    display: block;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color:white;
+    
+}
+
+
+
+.Department img{
+    
+    margin-top:5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer{
+    
+    background-color: #3E3E40;
+    height: 50px;
+    position: relative;
+    min-width: 100%;
+    text-align: left;
+    margin: 0;
+    
+}
+
+footer p{
+    
+    margin: 1% 6% ;
+    padding: 0;
+    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+    color: dimgray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 5b816ab0c68d5740b2c5d4c1edd660e061eadb8d
