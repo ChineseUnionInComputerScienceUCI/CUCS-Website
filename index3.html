@@ -3,116 +3,9 @@
   <head>
     <link href="bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style3.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
     <link href="Font-Awesome-3.2.1/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="resource/jquery-3.2.1.min.js"></script>
-    
-    <script type="text/javascript" >
-        
-     
-        
-      var main = function(){
-          
-          
-          var countCircle=0;
-          $(".arrow-next").click(function(){
-              
-              
-              var currentSlides = $('.active-slides');
-              var nextSlides = currentSlides.next();
-              
-              
-              
-              
-             
-              
-              
-              if(nextSlides.length===0)
-                  {
-                      nextSlides = $('.slides').first();
-                     
-                  }
-              
-              currentSlides.fadeOut(600).removeClass('active-slides');
-              nextSlides.fadeIn(600).addClass('active-slides');
-              
-
-              
-          });
-          
-          
-          $('.arrow-prev').click(function(){
-              
-              var currentSlides = $('.active-slides');
-              var prevSlides = currentSlides.prev();
-              
-              
-              
-              
-              var currentDot = $('.active-dot');
-              
-              
-              if(prevSlides.length===0)
-                  {
-                      prevSlides = $('.slides').last();
-                      
-                  }
-              
-              currentSlides.fadeOut(600).removeClass('active-slides');
-              prevSlides.fadeIn(600).addClass('active-slides');
-              
-             
-              
-          });
-          
-          
-          $('.dropDown').click(function(){
-              
-               $('.lateral-menu').fadeToggle(300);
-               var currentIcon = $(".icon-plus");
-               
-               currentIcon.toggleClass("icon-spin");
-               
-               
-               
-          });
-          
-            
-          $( "#draggable" ).draggable();
-          
-          $("#droppable").droppable({
-              
-              
-              
-              drop:function(event,ui){
-                  
-                  $(".emblem").html("<a href='http：//www.baidu.com'>点我查看福利</a>")
-              }
-              
-          });
-            
-        
-         
-          
-          
-          
-          
-         
-          
-      } 
-      
-      $(document).ready(function(){
-             
-             setTimeout(function(){
-                $('#wrapper').addClass('loaded');
-                 
-             },2000); 
-              
-          });
-      
-      $(document).ready(main);
-      </script>
-      
-      
     <meta charset="UTF-8">  
     <title> CUCS</title>
       
@@ -125,7 +18,7 @@
      <header >
       <div class="row">
         <div class="col-xs-4">   
-        <img id="logo" src="img/logo.png" height="50%" width="70%">
+        <img id="logo" src="img/logo.png" height="50px" width="255px">
         </div>
         <nav class="col-xs-8">
            <div class="menu">
@@ -141,58 +34,57 @@
       
     <!--主要区域-->
       <section class="jumbotron">
-        <div class="slides active-slides">
-          <div class=container>
+        <div class="item_box box10">
+          <div class="item_box_wp">
+            <div class="voice_2">
+              <ul>
+                <li class="li1" id="li1">
+                  <div class="fold" style="display:none;" >
+                      <p>1234</p>
+                  </div>
+                  <div class="unfold" style="display:block;">
             
-            <div class="row">
-                
-                <div class="col-sm-12">
-                    <img src="img/whiteBoardPainting.png" height="100%" width="100%" />
-                    
-                    
-                </div>    
-                  
-                
-            </div>    
-          </div>      
-        </div>
-          
-        <div class="slides">
-         
-                  <div class="col-sm-12">
-                    <img src="img/whiteBoardPainting.png" height="100%" width="100%" />
-                    
-                    
-                </div>    
-            
-        </div>    
-        
-          
-        <div class="slides">
-          <div class="row">
+                      <img src="img/whiteBoardPainting.png" height="100%" width="100%" />
               
-                   
-                <div class="col-sm-12">
-                    <img src="img/whiteBoardPainting.png" height="100%" width="100%" />
-                    
-                    
-                </div>    
-                    
-                    
-                    
-                  
+                  </div>
+                </li>
+                <li class="li2" id="li2">
+                  <div class="fold" >
+                    <span class="img"></span>
+                    <span class="txt">点击展开</span>
+                  </div>
+                  <div class="unfold" >
+            
+                    <dt><img src="img/i-angus.png" /></dt>
+              
+                  </div>
+                </li>
+               <li class="li3" id="li3">
+                 <div class="fold" >
+                  <span class="img"></span>
+                  <span class="txt">点击展开</span>
+                 </div>
+                 <div class="unfold" >
+            
+                   <dt><img src="img/i-angus.png" /></dt>
+              
+                 </div>
+              </li> 
+              <li class="li4" id="li4">
+                <div class="fold" >
+                  <span class="img"></span>
+                  <span class="txt">点击展开</span>
+                </div>
+                <div class="unfold" >
+            
+                  <dt><img src="img/i-angus.png" /></dt>
+              
+                </div>
+              </li>   
+              </ul>         
+            </div>
           </div>
-        </div>  
-      
-        <div class="slides">
-          <div class="row">
-             <div class="col-sm-12">
-                    <img src="img/whiteBoardPainting.png" height="100%" width="100%" />
-                    
-                    
-                </div>    
-          </div>
-        </div>  
+        </div>
           
         
           
@@ -200,13 +92,7 @@
          
         
       </section>
-      <section class="container arrowContainer">
-      
-         <a href="#" class="arrow-prev" ><img src="img/left_arrow.png" height="30%" width="30%"></a>
-            
-        <a href="#" class="arrow-next"><img src="img/right_arrow.png" height="30%" width="30%"></a>    
           
-      </section>      
       <section class="container seperatorContainer"> 
         
         <img src="img/seperator2.png" width="100%">
@@ -234,7 +120,31 @@
                
       </section>          
      
-      
+  <!--script-->
+  	<script type="text/javascript">
+		$(function(){
+			$(".voice_2 ul li").each(function(){
+				var fold = $(this).find(".fold");
+				var unfold = $(this).find(".unfold");
+				if(fold.is(":hidden")){
+					$(this).css("width","50%");
+				}else{
+					$(this).css("width","15%");
+				}
+			})
+			$(".voice_2 ul li").click(function(){
+				var li_index = $(this).index();
+                var current_color = $(this).css('background-color');
+                $('.box10').css('background-color',current_color);
+				$(this).animate({width:'50%'},'15%');
+				$(this).find(".unfold").show();
+				$(this).find(".fold").hide();
+				$(this).siblings().animate({width:'15%'},'25%');
+				$(this).siblings().find(".unfold").hide();
+				$(this).siblings().find(".fold").show();
+			})
+		})
+	</script>      
     
       
   </body>
@@ -245,5 +155,7 @@
           
           <p>Copyright2017 © Chinese Union of Computer Science at UC Irvine. All rights reserved</p>
   </footer>
+      
+    
     
 </html>
